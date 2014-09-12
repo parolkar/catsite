@@ -9,5 +9,13 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: .*
-  script: main.php
+- url: /index\.htm
+  static_files: index.htm
+  upload: index\.htm  
+
+- url: /main\.php
+  script: main\.php
+  
+- url: /images
+  static_dir: images
+
