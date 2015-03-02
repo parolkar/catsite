@@ -1,8 +1,8 @@
 #A quick hack script to generate a site with as many cat pictures you want :)
 
 
-@no_of_cats = 100 
-@loremimgurl="http://lorempixel.com/300/200/cats/PG%20SG%20CDN%20Cats"
+@no_of_cats = 1000 
+@loremimgurl="http://lorempixel.com/300/200/cats/CDN%20Cats"
 @directory="."
 
 
@@ -12,7 +12,7 @@ def get_images(no_of_cats)
 
      cmd = "time curl \"#{@loremimgurl}#{i}/\" > #{@directory}/images/cat_#{i}.jpg"
      system(cmd)
-    
+     sleep(1)
    end
 end
 
